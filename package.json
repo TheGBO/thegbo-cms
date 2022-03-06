@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "nodemon ./src/index.js"
+    "test": "nodemon ./src/index.js",
+    "start": "node ."
   },
   "author": "TheGBO",
   "license": "ISC",
