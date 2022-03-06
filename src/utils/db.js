@@ -7,7 +7,8 @@ const pool = new Pool({
     password:penv.DATABASE_PASSWORD,
     host:penv.DATABASE_HOST,
     port:penv.DATABASE_PORT,
-    database:penv.DATABASE_NAME
+    database:penv.DATABASE_NAME,
+    ssl: { rejectUnauthorized: false }
 });
 
 module.exports = pool;
