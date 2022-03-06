@@ -26,7 +26,7 @@ router.post('/post', auth, async (req, res) => {
 
 router.get('/post', async (req, res) => {
 	try {
-		const postsRetreived = await pool.query('SELECT * FROM posts');
+		const postsRetreived = await pool.query('SELECT id, title, thumbnail, date FROM posts');
 		res.json(suc(true,postsRetreived.rows,"Posts Retreived"));
 	} catch (error) {
 		console.log(error.message);

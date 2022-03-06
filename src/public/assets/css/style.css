@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: wheat;
+}
+
+body{
+    background: linear-gradient(to right, #8c00ff,#4400ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-form{
+    background: linear-gradient(to right, #ff7b00,#ff009d);
+    border-radius: 35px;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.styled-input{
+    background-color: #f0f8ff44;
+    border: none;
+    outline: none;
+    width: 70%;
+    padding: 4px;
+    margin: 8px;
+    font-size: 1.5rem;
+    resize: none;
+}
